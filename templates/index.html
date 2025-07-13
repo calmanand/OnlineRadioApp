@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Browser Player</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">🌐 Radio Browser Player</h1>
+      
+      <label class="label">Select Country:</label>
+      <div class="select">
+        <select id="countrySelect" onchange="loadStations()"></select>
+      </div>
+
+      <div id="stationsList" class="buttons mt-4"></div>
+
+      <audio id="player" controls style="width: 100%; margin-top: 2rem;"></audio>
+    </div>
+  </section>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
